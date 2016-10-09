@@ -18,14 +18,13 @@ class Prototype:
         return random.randint(1, 100000000)
 
     def _randomTimestamp(self):
-        year = random.randint(2000, 2016)
+        year = random.randint(1900, 2016)
         month = random.randint(1, 12)
         day = random.randint(1, 28)
         hour = random.randint(1, 23)
         minute = random.randint(0, 59)
         second = random.randint(0, 59)
-        microSecond = random.randint(1, 999999)
-        return datetime.datetime(year, month, day, hour, minute, second, microSecond)
+        return datetime.datetime(year, month, day, hour, minute, second)
 
 
 class GenerateCSV:
