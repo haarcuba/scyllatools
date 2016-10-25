@@ -12,7 +12,8 @@ class Prototype:
         self.instance = MAP[symbol]
 
     def _randomText(self):
-        return ''.join(random.choice(self.ALPHABET) for _ in range(10))
+        content = ''.join(random.choice(self.ALPHABET) for _ in range(10))
+        return "'{}'".format( content )
 
     def _randomInteger(self):
         return random.randint(1, 100000000)
